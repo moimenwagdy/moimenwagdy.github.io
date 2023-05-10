@@ -5,6 +5,10 @@
 }
 body {
   background-image: url("../paul-volkmer-fX-qWsXl5x8-unsplash.jpg");
+<<<<<<< HEAD
+=======
+  height: 105vh;
+>>>>>>> refs/remotes/origin/master
 }
 
 nav {
