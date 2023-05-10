@@ -75,7 +75,7 @@ h1 {
     width: 300px;
   }
   .small {
-    font-size: 10px;
+    display: none;
   }
 
   .imageContainer {
