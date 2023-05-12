@@ -19,7 +19,9 @@ async function getData() {
   } finally {
   }
 }
-getData()
+let response = getData();
+
+response
   .then((finalLength) => {
     return finalLength;
   })
@@ -32,7 +34,7 @@ getData()
     position.append(returned);
   });
 
-getData().then((data) => {
+response.then((data) => {
   let explain = document.querySelector(".explanation");
   explain.prepend(document.createTextNode(data.explanation));
   let date = document.querySelector(".Date");
@@ -41,6 +43,6 @@ getData().then((data) => {
   tit.append(document.createTextNode(data.title));
   let copyRights = document.querySelector(".copyRights");
   copyRights.append(
-    document.createTextNode(`copyrights for ${data.copyright}`)
+    document.createTextNode(`copyrights for ${data.copyright || "NASA"}`)
   );
 });
