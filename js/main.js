@@ -8,8 +8,8 @@ let getImg = (link, width, height) => {
 };
 
 async function getData() {
-  let apiLink = "https://api.nasa.gov/planetary/apod"; //
-  let apiKey = "t9i0HnTfud3FPd4hDQVrKGcN3UpYuMRcXbcZ7uU9";
+  let apiLink = "https://api.nasa.gov/planetary/apod";
+  let apiKey = "lwybxbzSD8wb61dithRPyr0JBJYTMvex6rEjdf1W";
   try {
     let rr = await fetch(`${apiLink}?api_key=${apiKey}`);
     let ff = rr.json();
@@ -23,6 +23,7 @@ let response = getData();
 
 response
   .then((finalLength) => {
+    console.log(finalLength);
     return finalLength;
   })
   .then((use) => {
