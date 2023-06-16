@@ -5,27 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nasa API Test Learning</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <!-- <link rel="stylesheet" href="./css/normalize.css " /> -->
     <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css " />
   </head>
   <body>
-
     <!-- start player -->
-    
+
     <div class="main">
-      <nav>
-        <h1>Nasa <span class="small">API-Test-Learning</span></h1>
-        <h3>The Daily Earth Image</h3>
+      <nav class="navbar navbar-light bg-light justify-content-start p-0">
+        <div
+          class="container justify-content-start flex-column align-items-start">
+          <h2 class="text-black navbar-brand pt-2 mb-0 fw-bold">
+            Nasa <span class="">API-Test-Learning</span>
+          </h2>
+          <p class="text-black-50 mb-0">The Daily Earth Image</p>
+        </div>
       </nav>
-      <div class="container">
-        <div class="imageContainer"></div>
-        <span class="Date"> </span>
-        <span class="title"></span>
-        <div class="explanation"><div class="copyRights"></div></div>
+
+      <div
+        class="container d-flex flex-column justify-content-center align-items-center">
+        <div class="frame p-2 row justify-content-center align-items-center">
+          <div class="imageContainer col-8 bg-light p-1"></div>
+        </div>
+        <span class="Date text-white-50"> </span>
+        <span class="title text-white-50"></span>
+        <div class="explanation text-white w-75 text-start">
+          <div class="copyRights"></div>
+        </div>
       </div>
     </div>
     <script src="./js/main.js" type="module"></script>
-    <!-- <script src="exr.js" type="module"></script> -->
+    <script src="./js/bootstrap.bundle.min.js" type="module"></script>
+    <script src="./js/all.min.js" type="module"></script>
   </body>
 </html>

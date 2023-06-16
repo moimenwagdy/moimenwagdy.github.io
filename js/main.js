@@ -1,9 +1,10 @@
-let getImg = (link, width, height) => {
+let getImg = (link) => {
   let img = document.createElement("img");
   img.title = `${link}`;
   img.src = link;
-  img.width = width;
-  img.height = height;
+  img.classList.add("img-fluid");
+  // img.width = width;
+  // img.height = height;
   return img;
 };
 
@@ -11,9 +12,9 @@ async function getData() {
   let apiLink = "https://api.nasa.gov/planetary/apod";
   let apiKey = "lwybxbzSD8wb61dithRPyr0JBJYTMvex6rEjdf1W";
   try {
-    let rr = await fetch(`${apiLink}?api_key=${apiKey}`);
-    let ff = rr.json();
-    return ff;
+    let fResponse = await fetch(`${apiLink}?api_key=${apiKey}`);
+    let toJson = fResponse.json();
+    return toJson;
   } catch (error) {
     console.error(` i'm the Error ${error}`);
   } finally {
@@ -23,12 +24,13 @@ let response = getData();
 
 response
   .then((finalLength) => {
-    console.log(finalLength);
     return finalLength;
   })
   .then((use) => {
-    let resized = getImg(use.url, 350, 350);
-    return resized;
+    if (use.media_type === "image") {
+      let resized = getImg(use.url);
+      return resized;
+    }
   })
   .then((returned) => {
     let position = document.querySelector(".imageContainer");

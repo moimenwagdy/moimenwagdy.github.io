@@ -1,85 +1,8 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 body {
-  background-image: url("../paul-volkmer-fX-qWsXl5x8-unsplash.jpg");
-}
-
-nav {
-  background-color: #e5efff;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  margin-bottom: 20px;
-  padding-left: 60px;
-  height: 75px;
-  width: 380px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: start;
-}
-
-h1 {
-  margin-right: 50px;
-  font-size: 45px;
-  color: rgb(0, 95, 204);
-}
-.small {
-  font-size: 15px;
-}
-
-.container {
-  margin: 0 auto;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.imageContainer {
-  width: 380px;
-  height: 380px;
-  background-color: rgba(0, 112, 204, 0.418);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-}
-
-.explanation {
-  margin-top: 10px;
-  color: white;
-  background-color: rgba(69, 146, 209, 0.212);
-}
-.Date {
-  color: white;
-}
-
-.title {
-  color: white;
-}
-
-.fa-sharp {
-  font-size: 20px;
-}
-
-@media (max-width: 480px) {
-  nav {
-    width: 300px;
-  }
-  .small {
-    display: none;
-  }
-
-  .imageContainer {
-    width: 320px;
-    height: 320px;
-  }
-  img {
-    width: 300px;
-    height: 300px;
-  }
+  background-image: url("../images/po.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
