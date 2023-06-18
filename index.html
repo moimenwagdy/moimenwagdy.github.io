@@ -9,10 +9,17 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css " />
   </head>
-  <body>
+  <body >
     <!-- start player -->
 
-    <div class="main">
+    <div class="main container-fluid ">
+      <div class="hideToggle d-none justify-content-center align-items-center">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <img src="" class="img-big img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
       <nav class="navbar navbar-light bg-light justify-content-start p-0">
         <div
           class="container justify-content-start flex-column align-items-start">
@@ -22,19 +29,33 @@
           <p class="text-black-50 mb-0">The Daily Earth Image</p>
         </div>
       </nav>
-
+      <div
+        class="container removableImgCont d-flex justify-content-center align-items-center">
+        <div
+          class="row justify-content-center align-items-center p-0 pt-2 w-75">
+          <div
+            class="imageContainer col-8 d-flex justify-content-center align-items-center bg-light p-1"></div>
+        </div>
+      </div>
+      <div class="vidContainer pt-2">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-8">
+            <div class="ratio ratio-21x9">
+              <iframe class="vid-loc" src="" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
       <div
         class="container d-flex flex-column justify-content-center align-items-center">
-        <div class="frame p-2 row justify-content-center align-items-center">
-          <div class="imageContainer col-8 bg-light p-1"></div>
-        </div>
         <span class="Date text-white-50"> </span>
         <span class="title text-white-50"></span>
-        <div class="explanation text-white w-75 text-start">
+        <div class="explanation text-white mw-100 text-center text-md-start">
           <div class="copyRights"></div>
         </div>
       </div>
     </div>
+
     <script src="./js/main.js" type="module"></script>
     <script src="./js/bootstrap.bundle.min.js" type="module"></script>
     <script src="./js/all.min.js" type="module"></script>

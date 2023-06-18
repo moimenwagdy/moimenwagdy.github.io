@@ -6,3 +6,18 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.explanation {
+  width: 85% !important;
+}
+
+.imageContainer {
+  cursor: pointer;
+}
+
+.hideToggle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
