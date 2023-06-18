@@ -40,7 +40,7 @@ let myImg = document.querySelector(".img-big");
 
 response.then((use) => {
   if (use.media_type === "image") {
-    vidcont.style.display = "none";
+    vidcont.style.cssText = "display:none !important";
     let myImage = getImg(use.url);
     position.append(myImage);
   }
