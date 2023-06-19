@@ -39,6 +39,7 @@ let vidcont = document.querySelector(".vidContainer");
 let myImg = document.querySelector(".img-big");
 
 response.then((use) => {
+  console.log(use);
   if (use.media_type === "image") {
     vidcont.style.cssText = "display:none !important";
     let myImage = getImg(use.url);
@@ -52,7 +53,8 @@ response.then((use) => {
   position.addEventListener("click", () => {
     hideToogle.classList.toggle("d-flex");
     hideToogle.classList.toggle("d-none");
-    myImg.src = use.url;
+    myImg.src = use.hdurl;
+    
   });
 });
 hideToogle.addEventListener("click", () => {
